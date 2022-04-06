@@ -1,12 +1,3 @@
-# AWS Glue Terraform module
-
-Terraform module which creates AWS MSK (Managed Streaming for Kafka) resources.
-
-## Usage
-
-See [`examples`](https://github.com/ahmadalibagheri/terraform-aws-msk/tree/main/examples) directory for working examples to reference:
-
-```hcl
 module "glue-connection" {
   source                 = "./glue-connection"
   name                   = "Kafka"
@@ -22,5 +13,3 @@ module "glue-job" {
   enhanced_monitoring    = "PER_TOPIC_PER_PARTITION"
   environment = "dev"
 }
-
-```
